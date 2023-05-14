@@ -1,218 +1,331 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>BootStrap Components</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- font properties -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Developer Portfolio: Projects</title>
 
-	<!-- BootStrap Link -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Bootstrap code -->
 
-    <!-- CSS link properties -->
-    <link rel="stylesheet" href="./index.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
 
-    
-</head>
+    <!-- font family -->
 
-<body>
-	<!-- Navbar Section Start here -->
-	<nav class="navbar navbar-expand-lg sticky-top" id="navbar">
-		<div class="container-fluid">
-			<a class="fs-2 fw-bold navbar-brand ps-5" href="#">Portfo<span>lio</span></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ms-auto gap-3">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Landing Page</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
-					</li>
-                    <li class="nav-item">
-						<a class="nav-link" href="#">Tools</a>
-					</li>
-                    
-				</ul>
-			</div>
-		</div>	
-	</nav>
-	<!-- Navbar Section Ends here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-	<!-- Main Section Start here -->
-	<div class = "container-fluid">
-		<div class = "row">
+    <!-- favicon -->
 
-			<!-- This second div will contain the Start page/landing -->
-			
-            <div class = "col-12">
-				 <div class = "container-fluid text-light min-vh-100" id="landing">
-				 	<div class="col-12 d-flex flex-column flex-md-row gap-3 mx-auto justify-content-evenly align-items-center">
-				 		
-						<div class="landing-right h-100 w-100 ">
-							<h1 id="name" class=""> Hi, I'm <span>Franz</span> &#128075;</h1>
-							<h3 id="title">Full-Stack Developer</h3>
-							<p class = "text-start" id="textOne">Junior Full-Stack Developer with less than a year of experience is seeking an opportunity to extend my web development and multimedia editing skills and knowledge.</p>
-						</div>
-						
-						<div>
-						<img class="pb-5 mb-5 h-100 w-100 d-flex d-md-flex id="photolanding" src="./landing pic.png">
-						</div>
-				 	</div>
+    <script
+      src="https://kit.fontawesome.com/5f3d4e9c08.js"
+      crossorigin="anonymous"
+    ></script>
 
-				 	<div class = "row mt-2">
-				 		<div class="col-6 mx-auto d-none d-md-block">
-				 			<!-- Carousel -->
-				 			<div id="carouselExampleIndicators" class="carousel slide">
-				 			  <div class="carousel-indicators">
-				 			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				 			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				 			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-				 			  </div>
-				 			  <div class="carousel-inner">
-				 			    <div class="carousel-item active">
-				 			      <img src="https://place-puppy.com/500x300" class="d-block w-100" alt="image of a puppy">
-				 			    </div>
-				 			    <div class="carousel-item">
-				 			      <img src="http://placekitten.com/500/300" class="d-block w-100" alt="image of a kitten">
-				 			    </div>
-				 			    <div class="carousel-item">
-				 			      <img src="https://placebear.com/500/300" class="d-block w-100" alt="image of a bear">
-				 			    </div>
-				 			  </div>
-				 			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-				 			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				 			    <span class="visually-hidden">Previous</span>
-				 			  </button>
-				 			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-				 			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				 			    <span class="visually-hidden">Next</span>
-				 			  </button>
-				 			</div>
-				 	</div>
+    <!-- index.css -->
 
-				 </div>
-				 <div class="row mt-3 bg-secondary text-light pb-3 text-center">
-				 	<h2>Other Tools</h2>
-				 	<div class="col-12 d-flex flex-column flex-md-row gap-3 mx-auto justify-content-evenly align-items-start">
-				 		<!-- HTML Card starts here -->
-				 		<div class="card h-100 w-100">
-				 		  <img src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg" class="card-img-top" alt="HTML image">
-				 		  <div class="card-body">
-				 		    <h5 class="card-title">HTML</h5>
-				 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				 		  </div>
-				 		</div>
-				 		<!-- HTML Card ends here -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="text-center">
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+      <div class="container-fluid">
+        <a class="fs-2 fw-bold navbar-brand ps-5" href="#"
+          >Portfo<span>lio.</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-5 pe-5 fs-5 fw-medium">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bout">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tools">Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-				 		<!-- BootStrap Card starts here -->
-				 		<div class="card h-100 w-100">
-				 		  <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-social.png" class="card-img-top" alt="BootStrap Image">
-				 		  <div class="card-body">
-				 		    <h5 class="card-title">BootStrap</h5>
-				 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				 		  </div>
-				 		</div>
-				 		<!-- BootStrap Card ends here -->
+    <!-- Web API Ecommerce Start -->
+    <div
+      class="main row d-flex vh-100 align-content-center align-items-center container-fluid gap-3"
+      id="home"
+    >
+      <div
+        class="details col-12 mx-auto pb-3 pt-3 col-md-5 mx-md-auto order-2 order-md-1"
+      >
+        <h1 id="name" class="text-center d-sm-flex">Hi, I'm Franz&#128075;</h1>
+        <h3 id="title" class="text-center d-sm-flex">Full-Stack Developer</h3>
+        <p class="text-start fs-5">
+          Junior Full-Stack Developer with less than a year of experience is
+          seeking an opportunity to extend my web development and multimedia
+          editing skills and knowledge.
+        </p>
+      </div>
+      <div
+        class="main-photo col-12 mx-auto pb-5 mt-0 order-1 order-md-2 col-md-5 pe-0"
+      >
+        <img src="./photo.png" class="photoNumberOne img-fluid w-75" />
+      </div>
+    </div>
+    <hr />
 
-				 		<!-- NodeJS Card starts here -->
-				 		<div class="card h-100 w-100">
-				 		  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" class="card-img-top" alt="NodeJS Image">
-				 		  <div class="card-body">
-				 		    <h5 class="card-title">NodeJS</h5>
-				 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				 		  </div>
-				 		</div>
-				 		<!-- NodeJS Card ends here -->
-				 	</div>
-				 </div>
+    <div>
+      <div class="aboutME container align-items-center">
+        <div class="aboutME1">
+          <h2 class="mt-5 mb-5" id="bout">ABOUT ME</h2>
+          <img class="photome img-fluid" src="./mayon.png" alt="" />
+          <div class="container mt-5">
+            <p class="comment fs-6">
+              I am a traveler and passionate photographer, constantly seeking
+              new adventures and capturing moments through my lens. With a
+              curious spirit, I immerse myself in diverse cultures and
+              breathtaking landscapes, documenting the beauty of the world.
+            </p>
+          </div>
+          <div class="container-fluid mb-5">
+            <div class="row pt-3">
+              <!-- HTML Card Start -->
+              <div
+                class="card1 col-10 mx-auto pb-3 pt-3 col-md-3 mx-md-auto"
+                id="html5"
+              >
+                <img
+                  src="./cambugahay falls siquijor 1.jpg"
+                  class="img-fluid"
+                />
+                <p class="testimonial">
+                  Cambugahay Falls is a hidden gem nestled in the lush forests
+                  of Siquijor, Philippines. With its crystal-clear turquoise
+                  waters cascading down a series of tiered limestone formations,
+                  it offers a serene and picturesque setting for visitors to
+                  swim, relax, and soak in the natural beauty.
+                </p>
+                <h5>
+                  <a
+                    href="https://dumaguete.com/siquijor/towns-municipalities-of-siquijor/"
+                    target="_blank"
+                    >VISIT</a
+                  >
+                </h5>
+              </div>
+              <!-- HTML Card End -->
 
-				 <!-- Contact form starts here -->
+              <!-- Bootstrap Card Start -->
+              <div
+                class="card1 col-10 mx-auto pb-3 pt-3 col-md-3 mx-md-auto"
+                id="html5"
+              >
+                <img
+                  src="./manjuyod sandbar 2 dumaguete negros oriental.jpg"
+                  class="img-fluid"
+                />
+                <p class="testimonial">
+                  Manjuyod White Sandbar, also known as the "Maldives of the
+                  Philippines," is a stunning sandbar located off the coast of
+                  Negros Oriental. With its pristine white sands stretching for
+                  kilometers, and the vibrant turquoise waters surrounding it,
+                  this picturesque destination offers a tropical paradise
+                  experience that feels like a dream come true.
+                </p>
+                <h5>
+                  <a
+                    href="https://dumaguete.com/siquijor/towns-municipalities-of-siquijor/"
+                    target="_blank"
+                    >VISIT</a
+                  >
+                </h5>
+              </div>
+              <div
+                class="card1 col-10 mx-auto pb-3 pt-3 col-md-3 mx-md-auto"
+                id="html5"
+              >
+                <img
+                  src="./sunset in salagdoong beach siquijor (1).jpg"
+                  class="img-fluid"
+                />
+                <p class="testimonial">
+                  Salagdoong Beach in Siquijor is a captivating coastal haven
+                  that boasts crystal-clear waters and powdery white sand. With
+                  its dramatic cliffs, thrilling cliff jumping spots, and a
+                  vibrant marine ecosystem, it offers an exhilarating beach
+                  experience perfect for both relaxation and adventure seekers
+                  alike.
+                </p>
+                <h5>
+                  <a
+                    href="https://dumaguete.com/siquijor/towns-municipalities-of-siquijor/"
+                    target="_blank"
+                    >VISIT</a
+                  >
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-				 <h2 class="text-center mt-5">Contact Me</h2>
-                 <div class="container mt-5 p-5 bg-primary w-50">
-                 	<div class="container col-12">
-	                 	<form class="row g-3 needs-validation text-center" novalidate>
-	                 	 
-	                 	  <div class="col-12">
-	                 	    <label for="validationCustom01" class="form-label">Name</label>
-	                 	    <input type="text" class="form-control" id="validationCustom01" value="" required placeholder="Your Name">
-	                 	  </div>
-	                 	  
-	                 	  <div class="col-12">
-	                 	  	<label for="exampleFormControlInput1" class="form-label">Email address</label>
-	                 	  	  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">                	
-	                 	  </div>
-	                 	  
-	                 	  <div class="col-12">
-		                 	   <label for="phoneNumber" class="form-label">Phone Number</label>
-		                 	   <input type="text" class="form-control" id="phoneNumber" placeholder="+ (639) 17-1234567">
-	                 	  </div>
+    <hr />
 
+    <h2 class="mt-5 mb-5" id="tools">PROJECTS</h2>
+    <!-- Other Projects Start -->
+    <div class="container justify-content-center projects mb-5">
+      <div class="row pt-3">
+        <!-- HTML Card Start -->
+        <div class="col-10 mx-auto pb-3 pt-3 col-md-3 mx-md-auto">
+          <img src="./Screenshot1.png" class="img-fluid" id="html5" />
+        </div>
+        <!-- HTML Card End -->
 
-		               	  <label class="col-12" for="">Concern</label>
-			                  <select name="service" id="service">
-			                       <option value="" disabled selected>Select Service Type</option>
-			                       <option value="">Quotation</option>
-			                       <option value="">Appointment</option>
-			                       <option value="">Follow-Up</option>
-			                  </select>
-	                 	  
-	                 	  <label for="message">Message</label><br>
-	                    	<textarea name="message" id="message" cols="20" rows="5"></textarea>
+        <!-- Bootstrap Card Start -->
+        <div class="col-10 mx-auto pb-3 pt-3 col-md-3 mx-md-auto">
+          <img src="./Screenshot2.png" class="img-fluid" id="html5" />
+        </div>
+        <!-- Bootstrap Card End -->
 
-	  	  	
-	  	  				<!-- Button trigger modal -->
+        <!-- Nose JS Server Card Start -->
+        <div class="col-10 mx-auto pb-3 pt-3 col-md-3 mx-md-auto">
+          <img src="./Screenshot3.png" id="html5" class="img-fluid" />
+        </div>
+        <!-- Node JS Server Card End -->
+      </div>
+      <!-- Other Projects End -->
+    </div>
+    <hr />
 
-	                 	  <!-- Button trigger modal -->
-	                 	  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-	                 	    Submit form
-	                 	  </button>
+    <h2 class="mt-5 mb-5" id="tools">TOOLS</h2>
+    <!-- Other Projects Start -->
+    <div class="container justify-content-center mb-5">
+      <div class="row pt-3">
+        <!-- HTML Card Start -->
+        <div class="col-10 mx-auto pb-3 pt-3 col-md-3 mx-md-auto">
+          <img src="./html.png" class="img-fluid" id="html5" />
+        </div>
+        <!-- HTML Card End -->
 
-	                 	  <!-- Modal -->
-	                 	  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	                 	    <div class="modal-dialog">
-	                 	      <div class="modal-content">
-	                 	        <div class="modal-header">
-	                 	          <h1 class="text-dark modal-title fs-5" id="exampleModalLabel">Thank you for contacting us!</h1>
-	                 	          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	                 	        </div>
-	                 	        <div class="modal-body">
-	                 	          <h1 class="text-dark modal-body fs-5">Message Successfully Sent</h1>
-	                 	        </div>
-	                 	        <div class="modal-footer">
-	                 	          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-	                 	          <button type="button" class="btn btn-primary">Save changes</button>
-	                 	        </div>
-	                 	      </div>
-	                 	    </div>
-	                 	  </div>
-	                 	</form>
-                 	</div>
-                 </div>                          
-			</div>
-		</div>
-	</div>
+        <!-- Bootstrap Card Start -->
+        <div class="col-10 mx-auto pb-3 pt-3 col-md-3 mx-md-auto">
+          <img src="./css.png" class="img-fluid" id="html5" />
+        </div>
+        <!-- Bootstrap Card End -->
 
+        <!-- Nose JS Server Card Start -->
+        <div class="col-10 mx-auto pb-3 pt-3 col-md-3 mx-md-auto">
+          <img src="./bootstrap.png" id="html5" class="img-fluid" />
+        </div>
+        <!-- Node JS Server Card End -->
+      </div>
+      <!-- Other Projects End -->
+    </div>
 
+    <!-- Contact -->
 
+    <hr />
+    <h2 class="mt-5 mb-5" id="contact">CONTACT</h2>
+    <div class="form-area container">
+      <div>
+        <div class="row single-form g-0">
+          <div class="col-sm-12 col-lg-6">
+            <div class="left">
+              <h2><span>LET'S</span> <br />TALK</h2>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="right">
+              <i class="fa fa-caret-left"></i>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Your Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Message</label
+                  >
+                  <textarea
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- Main Section Ends here -->
+    <div class="social mb-5 mt-5">
+      <a href="https://www.facebook.com/franzdee03/" target="_blank"
+        ><i class="fa fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/iamfranzdee/" target="_blank"
+        ><i class="fa fa-instagram"></i>
+      </a>
+      <a href="https://gitlab.com/frnzdee" target="_blank"
+        ><i class="fa fa-gitlab"></i>
+      </a>
+      <a href="https://github.com/frnzdee" target="_blank"
+        ><i class="fa fa-github"></i>
+      </a>
+    </div>
 
+    <div class="footerlarge">
+      <footer><p>&copy; 2023 Your Website. All rights reserved.</p></footer>
+    </div>
 
-
-
-
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
